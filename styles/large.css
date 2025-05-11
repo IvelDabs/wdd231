@@ -35,6 +35,10 @@
     display: none;
   }
 
+  #hamburgerBtn {
+    display: none;
+  }
+
   #mainNav {
     display: flex !important;
     justify-content: center;
@@ -49,8 +53,20 @@
   }
 
   nav ul {
+    display: flex !important;
+    flex-direction: row;
     justify-content: flex-start;
     padding-left: 3rem;
+    gap: 2rem;
+  }
+
+  nav ul li {
+    width: auto;
+  }
+
+  nav ul li a {
+    padding: 0.75rem 0;
+    border: none;
   }
 
   /* Main Content */

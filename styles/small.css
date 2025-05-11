@@ -52,15 +52,42 @@ header h1 {
 nav {
   background-color: var(--nav-bg);
   padding: 0;
+  position: relative;
+}
+
+#hamburgerBtn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background: var(--nav-bg);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: left;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  gap: 2rem;
-  padding: 0.75rem 2rem;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav ul.show {
+  display: block;
+}
+
+nav ul li {
+  width: 100%;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav a {

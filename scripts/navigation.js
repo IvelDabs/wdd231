@@ -1,18 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const menuBtn = document.getElementById("menuBtn");
   const mainNav = document.getElementById("mainNav");
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
 
-  // Toggle menu on button click
-  menuBtn.addEventListener("click", () => {
+  // Toggle menu on hamburger button click
+  hamburgerBtn.addEventListener("click", () => {
     mainNav.classList.toggle("show");
-    menuBtn.setAttribute("aria-expanded", mainNav.classList.contains("show"));
+    hamburgerBtn.setAttribute(
+      "aria-expanded",
+      mainNav.classList.contains("show")
+    );
   });
 
   // Close menu when clicking outside
   document.addEventListener("click", (e) => {
-    if (!menuBtn.contains(e.target) && !mainNav.contains(e.target)) {
+    if (!hamburgerBtn.contains(e.target) && !mainNav.contains(e.target)) {
       mainNav.classList.remove("show");
-      menuBtn.setAttribute("aria-expanded", "false");
+      hamburgerBtn.setAttribute("aria-expanded", "false");
     }
   });
 
