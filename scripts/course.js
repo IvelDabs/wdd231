@@ -48,21 +48,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const courseList = document.getElementById("courseList");
   const filterBtns = document.querySelectorAll(".filter-btn");
 
-  // Function to display courses
+  // Create and append credits display
+  const creditDisplay = document.createElement("p");
+  creditDisplay.id = "totalCredits";
+  creditDisplay.className = "credit-total";
+  document.querySelector(".certificate-section").appendChild(creditDisplay);
+
+  // Function to display courses and update credits
   function displayCourses(filter = "all") {
+    // Filter courses
     const filteredCourses = courses.filter((course) => {
       if (filter === "all") return true;
       return course.type === filter;
     });
 
-    // Clear current display
-    courseList.innerHTML = "";
+    // Calculate total credits using reduce
+    const totalCredits = filteredCourses.reduce(
+      (sum, course) => sum + course.credits,
+      0
+    );
+    creditDisplay.textContent = `Total Credits: ${totalCredits}`;
 
-    // Display filtered courses
+    // Clear and display courses
+    courseList.innerHTML = "";
     filteredCourses.forEach((course) => {
       const card = document.createElement("div");
       card.className = `course-card ${course.completed ? "completed" : ""}`;
-      card.textContent = course.code; // Only show the course code
+      card.textContent = course.code;
       courseList.appendChild(card);
     });
   }
@@ -70,14 +82,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add click handlers to filter buttons
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const filter = btn.dataset.filter;
-
-      // Update active button
       filterBtns.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
-
-      // Update display
-      displayCourses(filter);
+      displayCourses(btn.dataset.filter);
     });
   });
 
