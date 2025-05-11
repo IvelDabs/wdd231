@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 231 Course Home Page - Web Frontend Development II"
+    />
+    <meta name="author" content="Daberechi Levi Nwachukwu" />
+    <title>WDD 231 | Daberechi Levi Nwachukwu</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+
+    <!-- JavaScript Files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/profile.jpg" alt="Daberechi Levi Nwachukwu" />
+      <h1>Daberechi Levi Nwachukwu</h1>
+    </header>
+
+    <nav>
+      <ul id="mainNav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="chamber/">Chamber</a></li>
+        <li><a href="final/">Final</a></li>
+        <li><a href="https://github.com/IvelDabs">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/nd-levi/">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2 class="home-title">Home</h2>
+
+      <div class="content-grid">
+        <section class="course-work">
+          <h2>Course Work</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+
+        <section class="location-section">
+          <h2>Lagos State, Nigeria</h2>
+          <figure>
+            <img src="images/Neem-tree.webp" alt="Neem Trees" />
+            <figcaption>Neem Trees</figcaption>
+          </figure>
+        </section>
+      </div>
+
+      <section class="certificate-section">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cse">CSE</button>
+          <button class="filter-btn" data-filter="wdd">WDD</button>
+        </div>
+        <div id="courseList" class="course-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        ©2025 <span>🌸</span> Daberechi Levi Nwachukwu <span>🌸</span> Nigeria
+        <!-- <span class="flag">NG</span> -->
+      </p>
+      <p id="lastModified">Last Update: 05/11/2025 02:00:00</p>
+    </footer>
+  </body>
+</html>
