@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Directory of Levi's Chamber of Commerce members."
+    />
+    <meta name="Daberechi Levi Nwachukwu" content="Daberechi Levi Nwachukwu" />
+    <meta property="og:title" content="Levi's Chamber of Commerce Directory" />
+    <meta
+      property="og:description"
+      content="Find local businesses and organizations in Levi."
+    />
+    <meta property="og:image" content="images/og-image.jpg" />
+    <meta
+      property="og:url"
+      content="https://yourdomain.com/chamber/directory.html"
+    />
+    <title>Levi's Chamber Directory</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-title">
+        <img
+          src="images/logo.png"
+          alt="Levi Chamber logo"
+          class="logo"
+          height="48"
+        />
+        <div>
+          <h1>Levi Chamber of Commerce</h1>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Member Directory</h2>
+      <div class="view-toggle">
+        <button id="gridBtn" aria-label="Grid view">Grid View</button>
+        <button id="listBtn" aria-label="List view">List View</button>
+      </div>
+      <section id="members" class="grid"></section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <strong>Levi's Chamber of Commerce</strong><br />
+          10 anywhere avenue<br />
+          info@Levicc.org<br />
+          (223) 555-2300
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="YouTube"
+            ><img src="images/youtube.svg" alt="YouTube" height="24"
+          /></a>
+          <a href="#" aria-label="Twitter"
+            ><img src="images/twitter.svg" alt="Twitter" height="24"
+          /></a>
+          <a href="#" aria-label="LinkedIn"
+            ><img src="images/linkedin.svg" alt="LinkedIn" height="24"
+          /></a>
+        </div>
+        <div>
+          WDD231 Class Project<br />
+          Daberechi Levi Nwachukwu<br />
+          &copy; <span id="year"></span> Levi's Chamber of Commerce<br />
+          Last Modification: <span id="lastModified"></span>
+        </div>
+      </div>
+    </footer>
+    <script src="js/directory.js"></script>
+  </body>
+</html>

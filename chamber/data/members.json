@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Sahara Books",
+    "address": "123 Desert Rd, Timbuktu",
+    "phone": "223-555-1001",
+    "website": "https://saharabooks.com",
+    "image": "saharabooks.jpg",
+    "membership": 3,
+    "description": "Local bookstore and cafe."
+  },
+  {
+    "name": "Blue Dune Cafe",
+    "address": "45 Oasis Ave, Timbuktu",
+    "phone": "223-555-1002",
+    "website": "https://bluedunecafe.com",
+    "image": "bluedune.jpg",
+    "membership": 2,
+    "description": "Coffee, pastries, and community events."
+  },
+  {
+    "name": "Desert Tech Solutions",
+    "address": "88 Tech Park, Timbuktu",
+    "phone": "223-555-1003",
+    "website": "https://deserttech.com",
+    "image": "deserttech.jpg",
+    "membership": 1,
+    "description": "IT services and support for local businesses."
+  },
+  {
+    "name": "Oasis Fitness Center",
+    "address": "12 Palm St, Timbuktu",
+    "phone": "223-555-1004",
+    "website": "https://oasisfitness.com",
+    "image": "oasisfitness.jpg",
+    "membership": 2,
+    "description": "Modern gym and wellness programs."
+  },
+  {
+    "name": "Nomad Travel Agency",
+    "address": "7 Caravan Rd, Timbuktu",
+    "phone": "223-555-1005",
+    "website": "https://nomadtravel.com",
+    "image": "nomadtravel.jpg",
+    "membership": 1,
+    "description": "Travel planning and tours in Mali."
+  },
+  {
+    "name": "Golden Sands Hotel",
+    "address": "99 Gold St, Timbuktu",
+    "phone": "223-555-1006",
+    "website": "https://goldensands.com",
+    "image": "goldensands.jpg",
+    "membership": 3,
+    "description": "Luxury hotel and conference center."
+  },
+  {
+    "name": "Riverbank Restaurant",
+    "address": "5 River Rd, Timbuktu",
+    "phone": "223-555-1007",
+    "website": "https://riverbankresto.com",
+    "image": "riverbank.jpg",
+    "membership": 2,
+    "description": "Fine dining with a view of the Niger River."
+  }
+]
