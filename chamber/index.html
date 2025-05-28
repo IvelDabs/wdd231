@@ -7,8 +7,12 @@
       name="description"
       content="Home of Levi's Chamber of Commerce. Business resources, events, weather, and spotlights."
     />
-    <meta name="Daberechi Levi Nwachukwu" content="Daberechi Levi Nwachukwu" />
-    <meta property="og:title" content="Levi's Chamber of Commerce Home" />
+    <meta name="author" content="Daberechi Levi Nwachukwu" />
+
+    <meta
+      property="og:title"
+      content="Levi's Chamber of Commerce | Home - Business, Events & Community"
+    />
     <meta
       property="og:description"
       content="Welcome to Levi's Chamber of Commerce. Discover local businesses, events, and more."
@@ -16,12 +20,15 @@
     <meta property="og:image" content="images/og-image.jpg" />
     <meta
       property="og:url"
-      content="https://yourdomain.com/chamber/index.html"
+      content="https://iveldabs.github.io/wdd231/chamber/index.html"
     />
-    <title>Levi's Chamber Home</title>
+    <title>
+      Levi's Chamber of Commerce | Home - Business, Events & Community
+    </title>
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <script src="scripts/home.js" defer></script>
   </head>
   <body>
     <header>
@@ -48,12 +55,7 @@
     <main>
       <!-- Hero Section -->
       <section class="hero">
-        <img
-          src="images/chamber.jpg"
-          alt="Chamber Hero"
-          class="hero-img"
-          style="width: 100%; max-height: 320px; object-fit: cover"
-        />
+        <img src="images/chamber.jpg" alt="Chamber Hero" class="hero-img" />
         <div class="hero-content">
           <h2>Welcome to Levi's Chamber of Commerce</h2>
           <p>Your hub for business networking, events, and community growth.</p>
@@ -61,11 +63,8 @@
         </div>
       </section>
       <!-- Events & Weather -->
-      <section
-        class="info-row"
-        style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 2rem 0"
-      >
-        <div class="events" style="flex: 1 1 250px; min-width: 220px">
+      <section class="info-row">
+        <div class="events">
           <h3>Upcoming Events</h3>
           <ul id="events-list">
             <li><strong>Business Breakfast</strong> - June 10, 8:00am</li>
@@ -73,7 +72,7 @@
             <li><strong>Community Clean-Up</strong> - June 25, 9:00am</li>
           </ul>
         </div>
-        <div class="weather" style="flex: 1 1 250px; min-width: 220px">
+        <div class="weather">
           <h3>Current Weather</h3>
           <div id="weather-box">
             <p>Loading weather...</p>
@@ -87,10 +86,7 @@
       <!-- Spotlights -->
       <section class="spotlights">
         <h3>Business Spotlights</h3>
-        <div
-          id="spotlights"
-          style="display: flex; flex-wrap: wrap; gap: 1.5rem"
-        ></div>
+        <div id="spotlights"></div>
       </section>
     </main>
     <footer>
@@ -120,6 +116,5 @@
         </div>
       </div>
     </footer>
-    <script src="js/home.js"></script>
   </body>
 </html>
