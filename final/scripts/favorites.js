@@ -2,17 +2,27 @@
 import { setupNav } from "./nav.js";
 import { openModal, setupModal } from "./modal.js";
 
+let favorites = [];
+
+function syncFavorites() {
+  favorites = (JSON.parse(localStorage.getItem("favorites")) || []).map(Number);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupNav();
   setupModal();
+  syncFavorites();
   renderFavorites();
+  document
+    .getElementById("favorites-list")
+    .addEventListener("click", handleFavoriteClick);
 });
 
 async function renderFavorites() {
-  const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+  syncFavorites();
   const res = await fetch("recipes.json");
   const recipes = await res.json();
-  const favRecipes = recipes.filter((r) => favorites.includes(r.id));
+  const favRecipes = recipes.filter((r) => favorites.includes(Number(r.id)));
   const list = document.getElementById("favorites-list");
   if (favRecipes.length === 0) {
     list.innerHTML = "<p>You have no favorite recipes yet.</p>";
@@ -31,16 +41,22 @@ async function renderFavorites() {
   `
     )
     .join("");
-  list.addEventListener("click", (e) => {
-    if (e.target.classList.contains("details-btn")) {
-      const id = +e.target.dataset.id;
-      const recipe = favRecipes.find((r) => r.id === id);
-      openModal(recipe);
-    } else if (e.target.classList.contains("fav-btn")) {
-      const id = +e.target.dataset.id;
-      const newFavs = favorites.filter((f) => f !== id);
-      localStorage.setItem("favorites", JSON.stringify(newFavs));
-      renderFavorites();
-    }
-  });
+}
+
+function handleFavoriteClick(e) {
+  if (e.target.classList.contains("details-btn")) {
+    const id = Number(e.target.dataset.id);
+    fetch("recipes.json")
+      .then((res) => res.json())
+      .then((recipes) => {
+        const recipe = recipes.find((r) => Number(r.id) === id);
+        openModal(recipe);
+      });
+  } else if (e.target.classList.contains("fav-btn")) {
+    const id = Number(e.target.dataset.id);
+    syncFavorites();
+    const newFavs = favorites.filter((f) => f !== id);
+    localStorage.setItem("favorites", JSON.stringify(newFavs));
+    renderFavorites();
+  }
 }
