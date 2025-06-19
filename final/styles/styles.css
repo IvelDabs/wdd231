@@ -260,3 +260,59 @@ footer {
     gap: 1rem;
   }
 }
+
+/* Form Styling */
+#recipe-form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(56, 142, 60, 0.1);
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+#recipe-form label {
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.2rem;
+}
+#recipe-form input,
+#recipe-form select,
+#recipe-form textarea {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+  background: #f9f9f9;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  resize: vertical;
+}
+#recipe-form textarea {
+  min-height: 80px;
+}
+#recipe-form button[type="submit"] {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+#recipe-form button[type="submit"]:hover,
+#recipe-form button[type="submit"]:focus {
+  background: var(--accent);
+  color: var(--primary);
+}
+#recipe-form input:focus,
+#recipe-form select:focus,
+#recipe-form textarea:focus {
+  outline: 2px solid var(--primary);
+  border-color: var(--primary);
+}
