@@ -1,0 +1,232 @@
+[
+  {
+    "id": 1,
+    "name": "Chickpea Avocado Salad",
+    "type": "lunch",
+    "diet": ["vegan", "gluten-free", "high-protein"],
+    "image": "chickpea-avocado.jpg",
+    "description": "A protein-packed salad with chickpeas, creamy avocado, fresh veggies, and a zesty lemon dressing.",
+    "ingredients": [
+      "1 can chickpeas, drained",
+      "1 ripe avocado, diced",
+      "1/2 cup cherry tomatoes, halved",
+      "1/4 cup red onion, diced",
+      "2 tbsp lemon juice",
+      "Salt and pepper to taste"
+    ],
+    "instructions": "Mix all ingredients in a bowl. Toss gently and serve chilled."
+  },
+  {
+    "id": 2,
+    "name": "Banana Oat Pancakes",
+    "type": "breakfast",
+    "diet": ["vegan", "gluten-free"],
+    "image": "banana-oat-pancakes.jpg",
+    "description": "Fluffy pancakes made with oats and bananas. Perfect for a healthy breakfast.",
+    "ingredients": [
+      "2 ripe bananas",
+      "1 cup rolled oats",
+      "1/2 cup almond milk",
+      "1 tsp baking powder",
+      "1 tsp vanilla extract"
+    ],
+    "instructions": "Blend all ingredients. Cook on a non-stick skillet until golden. Serve with fruit."
+  },
+  {
+    "id": 3,
+    "name": "Lentil Bolognese",
+    "type": "dinner",
+    "diet": ["vegan", "high-protein"],
+    "image": "lentil-bolognese.jpg",
+    "description": "A hearty Italian-style sauce made with lentils, tomatoes, and herbs. Serve over pasta.",
+    "ingredients": [
+      "1 cup dried lentils",
+      "1 can crushed tomatoes",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tsp dried oregano",
+      "Salt and pepper to taste"
+    ],
+    "instructions": "Cook lentils. Sauté onion and garlic, add tomatoes and lentils, simmer with herbs."
+  },
+  {
+    "id": 4,
+    "name": "Stuffed Bell Peppers",
+    "type": "dinner",
+    "diet": ["vegan", "gluten-free", "nut-free"],
+    "image": "stuffed-bell-peppers.jpg",
+    "description": "Colorful bell peppers stuffed with quinoa, black beans, and veggies. Baked to perfection.",
+    "ingredients": [
+      "4 bell peppers",
+      "1 cup cooked quinoa",
+      "1 can black beans, drained",
+      "1/2 cup corn",
+      "1/2 cup salsa"
+    ],
+    "instructions": "Mix filling, stuff peppers, bake at 375°F for 25 min."
+  },
+  {
+    "id": 5,
+    "name": "Berry Chia Pudding",
+    "type": "dessert",
+    "diet": ["vegan", "gluten-free", "nut-free", "soy-free"],
+    "image": "berry-chia-pudding.jpg",
+    "description": "A creamy, naturally sweet pudding made with chia seeds and fresh berries.",
+    "ingredients": [
+      "1/4 cup chia seeds",
+      "1 cup almond milk",
+      "1 tbsp maple syrup",
+      "1/2 cup mixed berries"
+    ],
+    "instructions": "Mix chia, milk, and syrup. Chill overnight. Top with berries."
+  },
+  {
+    "id": 6,
+    "name": "Sweet Potato Buddha Bowl",
+    "type": "lunch",
+    "diet": ["vegan", "gluten-free", "nut-free"],
+    "image": "sweet-potato-buddha-bowl.jpg",
+    "description": "A nourishing bowl with roasted sweet potatoes, greens, chickpeas, and tahini dressing.",
+    "ingredients": [
+      "1 sweet potato, cubed",
+      "2 cups mixed greens",
+      "1/2 cup chickpeas",
+      "2 tbsp tahini",
+      "1 tbsp lemon juice"
+    ],
+    "instructions": "Roast sweet potato. Arrange all ingredients in a bowl. Drizzle with tahini dressing."
+  },
+  {
+    "id": 7,
+    "name": "Zucchini Noodle Stir Fry",
+    "type": "dinner",
+    "diet": ["vegan", "gluten-free", "nut-free", "soy-free"],
+    "image": "zucchini-noodle-stir-fry.jpg",
+    "description": "A light and flavorful stir fry using spiralized zucchini noodles and fresh veggies.",
+    "ingredients": [
+      "2 zucchinis, spiralized",
+      "1 bell pepper, sliced",
+      "1 carrot, julienned",
+      "2 tbsp soy sauce (or coconut aminos)",
+      "1 tsp sesame oil"
+    ],
+    "instructions": "Stir fry veggies, add noodles and sauce, cook until just tender."
+  },
+  {
+    "id": 8,
+    "name": "Coconut Mango Smoothie",
+    "type": "snack",
+    "diet": ["vegan", "gluten-free", "nut-free", "soy-free"],
+    "image": "coconut-mango-smoothie.jpg",
+    "description": "A tropical smoothie with coconut milk, mango, and banana. Refreshing and energizing!",
+    "ingredients": ["1 cup coconut milk", "1 cup frozen mango", "1 banana"],
+    "instructions": "Blend all ingredients until smooth. Serve chilled."
+  },
+  {
+    "id": 9,
+    "name": "Roasted Cauliflower Tacos",
+    "type": "dinner",
+    "diet": ["vegan", "gluten-free", "nut-free"],
+    "image": "roasted-cauliflower-tacos.jpg",
+    "description": "Tacos filled with spiced roasted cauliflower, slaw, and creamy avocado sauce.",
+    "ingredients": [
+      "1 head cauliflower, chopped",
+      "1 tbsp taco seasoning",
+      "8 corn tortillas",
+      "1 cup slaw mix",
+      "1 avocado"
+    ],
+    "instructions": "Roast cauliflower with seasoning. Fill tortillas with all toppings."
+  },
+  {
+    "id": 10,
+    "name": "Peanut Butter Energy Bites",
+    "type": "snack",
+    "diet": ["vegan", "gluten-free", "high-protein", "soy-free"],
+    "image": "peanut-butter-energy-bites.jpg",
+    "description": "No-bake bites with oats, peanut butter, and seeds. Great for on-the-go energy!",
+    "ingredients": [
+      "1 cup rolled oats",
+      "1/2 cup peanut butter",
+      "1/4 cup maple syrup",
+      "2 tbsp chia seeds"
+    ],
+    "instructions": "Mix all, roll into balls, chill before serving."
+  },
+  {
+    "id": 11,
+    "name": "Quinoa Veggie Soup",
+    "type": "lunch",
+    "diet": ["vegan", "gluten-free", "nut-free", "soy-free"],
+    "image": "quinoa-veggie-soup.jpg",
+    "description": "A comforting soup with quinoa, vegetables, and herbs. Perfect for any season.",
+    "ingredients": [
+      "1/2 cup quinoa",
+      "4 cups vegetable broth",
+      "1 cup mixed veggies",
+      "1 tsp dried thyme"
+    ],
+    "instructions": "Simmer all ingredients until veggies and quinoa are tender."
+  },
+  {
+    "id": 12,
+    "name": "Chocolate Chia Mousse",
+    "type": "dessert",
+    "diet": ["vegan", "gluten-free", "nut-free", "soy-free"],
+    "image": "chocolate-chia-mousse.jpg",
+    "description": "A rich, creamy mousse made with chia seeds, cocoa, and almond milk.",
+    "ingredients": [
+      "1/4 cup chia seeds",
+      "1 cup almond milk",
+      "2 tbsp cocoa powder",
+      "2 tbsp maple syrup"
+    ],
+    "instructions": "Blend all, chill until thickened. Top with berries."
+  },
+  {
+    "id": 13,
+    "name": "Carrot Lentil Curry",
+    "type": "dinner",
+    "diet": ["vegan", "gluten-free", "high-protein"],
+    "image": "carrot-lentil-curry.jpg",
+    "description": "A fragrant curry with carrots, lentils, and coconut milk. Serve with rice or naan.",
+    "ingredients": [
+      "1 cup red lentils",
+      "2 carrots, sliced",
+      "1 can coconut milk",
+      "2 tbsp curry powder"
+    ],
+    "instructions": "Cook lentils and carrots, add coconut milk and curry, simmer."
+  },
+  {
+    "id": 14,
+    "name": "Apple Cinnamon Overnight Oats",
+    "type": "breakfast",
+    "diet": ["vegan", "gluten-free", "nut-free", "soy-free"],
+    "image": "apple-cinnamon-oats.jpg",
+    "description": "Easy overnight oats with apple, cinnamon, and maple syrup. Perfect for busy mornings.",
+    "ingredients": [
+      "1/2 cup rolled oats",
+      "1/2 apple, diced",
+      "1/2 tsp cinnamon",
+      "1 cup almond milk",
+      "1 tbsp maple syrup"
+    ],
+    "instructions": "Mix all, refrigerate overnight. Enjoy cold or warm."
+  },
+  {
+    "id": 15,
+    "name": "Spicy Hummus Wrap",
+    "type": "lunch",
+    "diet": ["vegan", "nut-free", "soy-free"],
+    "image": "spicy-hummus-wrap.jpg",
+    "description": "A quick wrap with spicy hummus, veggies, and greens. Great for lunch on the go.",
+    "ingredients": [
+      "1 large tortilla",
+      "1/4 cup spicy hummus",
+      "1/2 cup mixed veggies",
+      "1/2 cup greens"
+    ],
+    "instructions": "Spread hummus, add veggies and greens, roll up and slice."
+  }
+]

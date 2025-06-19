@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GreenPlate helps you discover, save, and explore a variety of plant-based recipes. Find healthy, sustainable meal ideas and explore dietary options in a modern, interactive way."
+    />
+    <meta name="author" content="Your Name" />
+    <meta
+      property="og:title"
+      content="GreenPlate | Plant-Based Recipe Explorer"
+    />
+    <meta
+      property="og:description"
+      content="Discover, save, and explore plant-based recipes with GreenPlate. Curated, healthy, and sustainable meal ideas for everyone."
+    />
+    <meta property="og:image" content="images/greenplate-og.jpg" />
+    <meta
+      property="og:url"
+      content="https://your-github-username.github.io/wdd231/final/index.html"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>GreenPlate | Plant-Based Recipe Explorer</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script type="module" src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-title">
+        <img
+          src="images/logo.png"
+          alt="GreenPlate logo"
+          class="logo"
+          height="48"
+        />
+        <h1>GreenPlate</h1>
+      </div>
+      <nav id="main-nav">
+        <button
+          id="nav-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          &#9776;
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Recipes</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+          <li><a href="form.html">Submit</a></li>
+          <li><a href="attribution.html">Attributions</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>Welcome to GreenPlate</h2>
+        <p>
+          Discover, save, and explore a variety of plant-based recipes curated
+          for healthy and sustainable living. Start your plant-based journey
+          today!
+        </p>
+        <a href="directory.html" class="cta-btn">Explore Recipes</a>
+      </section>
+      <section class="features">
+        <h2>Why GreenPlate?</h2>
+        <ul>
+          <li>Curated plant-based recipes from around the world</li>
+          <li>Dynamic filtering and search</li>
+          <li>Save your favorite recipes</li>
+          <li>Accessible, responsive, and user-friendly design</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          &copy; <span id="year"></span> GreenPlate |
+          <a href="attribution.html">Attributions</a>
+        </div>
+        <div>
+          <a href="https://youtu.be/your-demo-video" target="_blank"
+            >Video Demo</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

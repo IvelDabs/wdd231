@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Your favorite plant-based recipes on GreenPlate."
+    />
+    <meta name="author" content="Your Name" />
+    <meta property="og:title" content="GreenPlate | Favorites" />
+    <meta
+      property="og:description"
+      content="View and manage your favorite plant-based recipes."
+    />
+    <meta property="og:image" content="images/greenplate-og.jpg" />
+    <meta
+      property="og:url"
+      content="https://your-github-username.github.io/wdd231/final/favorites.html"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>GreenPlate | Favorites</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script type="module" src="scripts/favorites.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-title">
+        <img
+          src="images/logo.png"
+          alt="GreenPlate logo"
+          class="logo"
+          height="48"
+        />
+        <h1>GreenPlate</h1>
+      </div>
+      <nav id="main-nav">
+        <button
+          id="nav-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          &#9776;
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Recipes</a></li>
+          <li><a href="favorites.html" class="active">Favorites</a></li>
+          <li><a href="form.html">Submit</a></li>
+          <li><a href="attribution.html">Attributions</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Your Favorites</h1>
+      <section id="favorites-list" class="recipe-list"></section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          &copy; <span id="year"></span> GreenPlate |
+          <a href="attribution.html">Attributions</a>
+        </div>
+        <div>
+          <a
+            href="https://youtu.be/your-demo-video"
+            target="_blank"
+            rel="noopener"
+            >Video Demo</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

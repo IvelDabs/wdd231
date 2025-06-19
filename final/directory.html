@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse and filter plant-based recipes on GreenPlate. Find your next favorite meal!"
+    />
+    <meta name="author" content="Your Name" />
+    <meta property="og:title" content="GreenPlate | Recipe Directory" />
+    <meta
+      property="og:description"
+      content="Browse, filter, and explore plant-based recipes. Save your favorites and discover new ideas."
+    />
+    <meta property="og:image" content="images/greenplate-og.jpg" />
+    <meta
+      property="og:url"
+      content="https://your-github-username.github.io/wdd231/final/directory.html"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>GreenPlate | Recipe Directory</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script type="module" src="scripts/directory.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-title">
+        <img
+          src="images/logo.png"
+          alt="GreenPlate logo"
+          class="logo"
+          height="48"
+        />
+        <h1>GreenPlate</h1>
+      </div>
+      <nav id="main-nav">
+        <button
+          id="nav-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          &#9776;
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Recipes</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+          <li><a href="form.html">Submit</a></li>
+          <li><a href="attribution.html">Attributions</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Recipe Directory</h1>
+      <section class="filters">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search recipes..."
+          aria-label="Search recipes"
+        />
+        <select id="type-filter" aria-label="Filter by type">
+          <option value="">All Types</option>
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="snack">Snack</option>
+          <option value="dessert">Dessert</option>
+        </select>
+        <select id="diet-filter" aria-label="Filter by diet">
+          <option value="">All Diets</option>
+          <option value="gluten-free">Gluten-Free</option>
+          <option value="high-protein">High Protein</option>
+          <option value="nut-free">Nut-Free</option>
+          <option value="soy-free">Soy-Free</option>
+        </select>
+      </section>
+      <section id="recipe-list" class="recipe-list"></section>
+      <dialog id="recipe-modal" aria-modal="true"></dialog>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          &copy; <span id="year"></span> GreenPlate |
+          <a href="attribution.html">Attributions</a>
+        </div>
+        <div>
+          <a href="https://youtu.be/your-demo-video" target="_blank"
+            >Video Demo</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
