@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenPlate Site Plan</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-green: #388e3c;
+        --accent-yellow: #ffd600;
+        --background: #f5f5f5;
+        --text: #222;
+      }
+      body {
+        font-family: "Montserrat", Arial, sans-serif;
+        background: var(--background);
+        color: var(--text);
+        margin: 0;
+        padding: 0 1rem 2rem 1rem;
+      }
+      header {
+        background: var(--primary-green);
+        color: #fff;
+        padding: 1.5rem 1rem 1rem 1rem;
+        border-radius: 0 0 1rem 1rem;
+        text-align: center;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Montserrat", Arial, sans-serif;
+        color: var(--primary-green);
+      }
+      h1 {
+        color: #fff;
+      }
+      section {
+        margin: 2rem 0;
+        background: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(56, 142, 60, 0.07);
+        padding: 1.5rem;
+      }
+      .accent {
+        color: var(--accent-yellow);
+        font-weight: bold;
+      }
+      ul {
+        margin: 0.5rem 0 0 1.5rem;
+      }
+      .wireframes {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .wireframe {
+        background: var(--background);
+        border: 2px dashed var(--primary-green);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        max-width: 350px;
+        margin: 0 auto;
+      }
+      .wireframe-title {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: var(--primary-green);
+      }
+      @media (min-width: 700px) {
+        .wireframes {
+          flex-direction: row;
+          justify-content: center;
+        }
+        .wireframe {
+          max-width: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>GreenPlate: Site Plan</h1>
+      <p class="accent">A Plant-Based Recipe Explorer</p>
+    </header>
+
+    <section>
+      <h2>Site Name</h2>
+      <p>
+        <strong>GreenPlate</strong> was chosen to represent a focus on
+        plant-based, eco-friendly eating. The name is simple, memorable, and
+        clearly communicates the site's mission to promote healthy, sustainable
+        food choices.
+      </p>
+      <p><em>Optional domain:</em> greenplate-recipes.com</p>
+    </section>
+
+    <section>
+      <h2>Site Purpose</h2>
+      <p>
+        The site provides a hub for discovering, saving, and exploring
+        plant-based recipes. Users can browse a curated directory, filter
+        recipes by type or ingredient, and view detailed recipe instructions.
+        The site encourages healthy, sustainable eating and makes it easy for
+        users to find new meal ideas.
+      </p>
+    </section>
+
+    <section>
+      <h2>Scenarios</h2>
+      <ul>
+        <li>
+          What are some easy plant-based recipes I can make for dinner tonight?
+        </li>
+        <li>
+          How can I filter recipes to find gluten-free or high-protein options?
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Color Schema</h2>
+      <ul>
+        <li>
+          <span class="accent">Primary Green (#388e3c):</span> Used for
+          headings, header background, and accents.
+        </li>
+        <li>
+          <span class="accent">Accent Yellow (#ffd600):</span> Used for
+          highlights and accent text.
+        </li>
+        <li>
+          <span style="color: #222">Dark Gray (#222):</span> Used for main text.
+        </li>
+        <li>
+          <span style="color: #f5f5f5; background: #222; padding: 0 0.5em"
+            >Light Gray (#f5f5f5):</span
+          >
+          Used for page background.
+        </li>
+      </ul>
+      <p>This document uses the selected color scheme throughout.</p>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <ul>
+        <li>
+          <strong>Montserrat</strong> (Google Fonts): Used for all headings and
+          body text for a clean, modern look.
+        </li>
+      </ul>
+      <p>This document uses Montserrat for all text.</p>
+    </section>
+
+    <section>
+      <h2>Wireframe</h2>
+      <div class="wireframes">
+        <div class="wireframe">
+          <div class="wireframe-title">Mobile View</div>
+          <pre style="font-size: 0.9em">
++----------------------------+
+|  GreenPlate Logo           |
+|  [≡] Menu (drawer)         |
++----------------------------+
+|  Home  Directory  Join     |
+|  About  Saved Recipes      |
++----------------------------+
+|  Welcome message           |
++----------------------------+
+|  [Recipe Search Bar]       |
+|  [Filter Dropdowns]        |
++----------------------------+
+|  [Recipe List]             |
+|   - Recipe Card            |
+|   - Recipe Card            |
++----------------------------+
+|  [Tap Recipe → Modal]      |
++----------------------------+
+|  Footer                    |
++----------------------------+
+          </pre>
+        </div>
+        <div class="wireframe">
+          <div class="wireframe-title">Desktop View</div>
+          <pre style="font-size: 0.9em">
++----------------------------------------------------------+
+| GreenPlate Logo      | Home | Directory | Join | About   |
+|                      | Saved Recipes                     |
++----------------------------------------------------------+
+| [Sidebar Filters]    |  Welcome message                  |
+|  - Search            |  [Recipe List/Grid]               |
+|  - Dietary Filters   |   - Recipe Card                   |
+|                      |   - Recipe Card                   |
+|                      |                                   |
+|                      | [Click Recipe → Modal Dialog]     |
++----------------------------------------------------------+
+|                        Footer                            |
++----------------------------------------------------------+
+          </pre>
+        </div>
+      </div>
+      <p>
+        Wireframes show navigation links (Home, Directory, Join, About, Saved
+        Recipes), search/filter controls, recipe list, and modal dialog for
+        recipe details. Layout adapts for mobile and desktop views.
+      </p>
+    </section>
+  </body>
+</html>
