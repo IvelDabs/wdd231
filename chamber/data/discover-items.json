@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Oasis Park",
+    "address": "123 Greenway Blvd, Oasis City",
+    "description": "A lush public park with walking trails, gardens, and a large playground. Perfect for families and outdoor enthusiasts.",
+    "image": "Oasis.webp"
+  },
+  {
+    "name": "Riverbank Museum",
+    "address": "456 River Rd, Oasis City",
+    "description": "A local museum showcasing the history, art, and culture of the region. Features interactive exhibits for all ages.",
+    "image": "Riverbank.webp"
+  },
+  {
+    "name": "Golden Market",
+    "address": "789 Market St, Oasis City",
+    "description": "A vibrant farmer's market open every weekend, offering fresh produce, crafts, and local delicacies.",
+    "image": "Golden.webp"
+  },
+  {
+    "name": "Desert Botanical Garden",
+    "address": "321 Desert Ave, Oasis City",
+    "description": "Explore a wide variety of desert plants and themed gardens. Guided tours and educational programs available.",
+    "image": "Desert.webp"
+  },
+  {
+    "name": "Blue Lake Marina",
+    "address": "654 Lakeview Dr, Oasis City",
+    "description": "A scenic marina offering boat rentals, fishing, and lakeside dining. Popular for water sports and picnics.",
+    "image": "Blue.webp"
+  },
+  {
+    "name": "Nomad Art Gallery",
+    "address": "987 Art Ln, Oasis City",
+    "description": "A contemporary art gallery featuring works by local and international artists. Hosts monthly exhibitions and workshops.",
+    "image": "Nomad.webp"
+  },
+  {
+    "name": "Sahara Event Center",
+    "address": "159 Event Blvd, Oasis City",
+    "description": "A modern venue for concerts, conferences, and community events. State-of-the-art facilities and ample parking.",
+    "image": "Sahara.webp"
+  },
+  {
+    "name": "Insta Fitness Trail",
+    "address": "753 Fitness Rd, Oasis City",
+    "description": "A well-maintained trail for running, biking, and walking. Features fitness stations and beautiful scenery.",
+    "image": "Insta.webp"
+  }
+]

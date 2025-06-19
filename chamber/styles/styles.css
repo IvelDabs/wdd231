@@ -278,29 +278,110 @@ footer {
   background: #ffcc00;
   color: #222;
 }
-@media (max-width: 900px) {
-  .join-container {
-    flex-direction: column;
-  }
-  .membership-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  .membership-card {
-    flex: 1 1 180px;
-    min-width: 160px;
+/* Discover Page Styles */
+#discover-main {
+  display: grid;
+  grid-template-areas:
+    "sidebar"
+    "cards";
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+#visit-message {
+  grid-area: sidebar;
+  background: #e8f5e9;
+  color: #004466;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.cards-grid {
+  grid-area: cards;
+  display: grid;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: 1.5rem;
+}
+.discover-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.discover-card h2 {
+  margin: 0.2rem 0 0.1rem 0;
+  font-size: 1.2rem;
+  color: #004466;
+}
+.discover-card figure {
+  margin: 0 0 0.5rem 0;
+  width: 100%;
+}
+.discover-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s, filter 0.3s, box-shadow 0.3s;
+}
+.discover-card address {
+  font-style: normal;
+  color: #388e3c;
+  margin-bottom: 0.5rem;
+}
+.discover-card p {
+  margin: 0.2rem 0;
+}
+.discover-card button {
+  background: #004466;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.7rem;
+  transition: background 0.2s;
+}
+.discover-card button:hover,
+.discover-card button:focus {
+  background: #ffcc00;
+  color: #222;
+}
+@media (max-width: 700px) {
+  #discover-cards.cards-grid {
+    grid-template-columns: 1fr;
   }
 }
-@media (max-width: 600px) {
-  #joinForm,
-  .membership-cards {
-    min-width: 0;
-    width: 100%;
+@media (min-width: 701px) and (max-width: 1024px) {
+  #discover-cards.cards-grid {
+    grid-template-columns: 1fr 1fr;
   }
-  .membership-cards {
-    flex-direction: column;
-    gap: 1rem;
+}
+@media (min-width: 1025px) {
+  #discover-cards.cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 641px) {
+  .discover-card img:hover {
+    transform: scale(1.07) rotate(-1deg);
+    filter: brightness(1.08) drop-shadow(0 4px 16px #388e3c33);
+    box-shadow: 0 4px 16px #388e3c33;
+    z-index: 1;
   }
 }

@@ -3,26 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Directory of Levi's Chamber of Commerce members."
-    />
-    <meta name="author" content="Daberechi Levi Nwachukwu" />
-    <meta property="og:title" content="Levi's Chamber of Commerce Directory" />
-    <meta
-      property="og:description"
-      content="Find local businesses and organizations in Levi."
-    />
-    <meta property="og:image" content="images/chamber.jpg" />
-    <meta
-      property="og:url"
-      content="https://iveldabs.github.io/wdd231/chamber/directory.html"
-    />
-    <title>Levi's Chamber Directory</title>
-    <link rel="icon" href="favicon.ico" />
+    <title>Discover | Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+    <!-- Add additional CSS for grid and responsive design as needed -->
   </head>
   <body>
     <header>
@@ -40,20 +24,17 @@
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="discover.html">Discover</a></li>
-          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="discover.html" class="active">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Levi Chamber of Commerce</h1>
-      <h2>Member Directory</h2>
-      <div class="view-toggle">
-        <button id="gridBtn" aria-label="Grid view">Grid View</button>
-        <button id="listBtn" aria-label="List view">List View</button>
-      </div>
-      <section id="members" class="grid"></section>
+    <main id="discover-main">
+      <aside id="visit-message" aria-live="polite"></aside>
+      <section id="discover-cards" class="cards-grid">
+        <!-- Cards will be injected here by JS -->
+      </section>
     </main>
     <footer>
       <div class="footer-content">
@@ -71,7 +52,7 @@
             ><img src="images/x.jpg" alt="Twitter" height="24"
           /></a>
           <a href="#" aria-label="LinkedIn"
-            ><img src="images/LinkedIn.jpg" alt="LinkedIn" height="24"
+            ><img src="images/linkedin.jpg" alt="LinkedIn" height="24"
           /></a>
         </div>
         <div>
@@ -82,5 +63,12 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // Set current year and last modified date in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("lastModified").textContent =
+        document.lastModified;
+    </script>
   </body>
 </html>
