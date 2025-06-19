@@ -41,6 +41,14 @@ async function renderFavorites() {
   `
     )
     .join("");
+
+  // Debug: Show localStorage favorites for troubleshooting
+  const debug = document.createElement("pre");
+  debug.style.background = "#f5f5f5";
+  debug.style.color = "#388e3c";
+  debug.style.fontSize = "0.9em";
+  debug.textContent = "localStorage.favorites: " + JSON.stringify(favorites);
+  document.getElementById("favorites-list").appendChild(debug);
 }
 
 function handleFavoriteClick(e) {
